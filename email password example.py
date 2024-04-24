@@ -12,15 +12,32 @@ else:
     print("my age sub",age3)"""
 
 
-
-email="anil"
-password="1234567890"
+user={'anil' : 123456789,'tagore' : 1122,'nandan' : 2233}
 uemail=str(input("enter email:"))
-upass=str(input("enter password:"))
-if(email == uemail ):
+upass=int(input("enter password:"))
+#uotp=str(input("enter otp:"))
+for i in user:
+    if (i == uemail):
+        if (user[i] == upass):
+            print("login success")
+        else:
+            print("login failed")
+'''
+user={'s':9876,'z':1234,'a':6789}
+
+uemail=str(input("enter mailid"))
+upassword=int(input("enter password")) 
+for i in user :
+    if(i == uemail):
+        if(user[i] == upassword):
+            print("Login successfull")
+
+'''
+'''if(email == uemail ):
     if(password == upass):
         print("login success")
     else:
         print("login failed due to incorrect password")
 else:
     print("login failed due to incorrect email")
+'''
